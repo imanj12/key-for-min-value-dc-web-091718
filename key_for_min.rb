@@ -7,27 +7,16 @@ def key_for_min_value(name_hash)
     return nil
   else
     keys_array = []
-    last_value = 0
+    last_value = nil
     name_hash.each do |key, value|
-      if last_value == 0
+      if last_value == nil
         last_value = value
         last_key = key
+        keys_array << key
       elsif value > last_value
         keys_array << last_key
       else
-        
+      
       end  
-      
-      
-      
-      
-      if last == 0
-        last = value
-      elsif (last*value)/2 > value
-        descending_array << value
-      end
-      last = value  
     end  
   end
-  
-end
