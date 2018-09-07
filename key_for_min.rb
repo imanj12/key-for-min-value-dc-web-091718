@@ -14,9 +14,8 @@ def key_for_min_value(name_hash)
         last_key = key
         keys_array << key
       elsif value < last_value
-        keys_array << last_key
-      else
-      
+        keys_array << key
       end  
-    end  
+    end
+    keys_array[-1]
   end
