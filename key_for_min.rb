@@ -13,7 +13,7 @@ def key_for_min_value(name_hash)
         last_value = value
         last_key = key
         keys_array << key
-      elsif value > last_value
+      elsif value < last_value
         keys_array << last_key
       else
       
