@@ -19,3 +19,4 @@ def key_for_min_value(name_hash)
     end
     keys_array[-1]
   end
+end
