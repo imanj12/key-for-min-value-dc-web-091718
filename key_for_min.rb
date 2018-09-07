@@ -6,8 +6,11 @@ def key_for_min_value(name_hash)
   if name_hash == {}
     return nil
   else
-    name_hash.collect do |key, value|
-        
+    descending_array = []
+    name_hash.each do |key, value|
+      if (last*value)/2 > value
+        descending_array << value
+      last = value  
     end  
   end
   
